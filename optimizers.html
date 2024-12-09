@@ -3787,7 +3787,7 @@ v_3 \textcolor{magenta}{=} \beta^3 \cdot x_1 + (1 - \beta) \left[\beta^2 \cdot x
 </section>
 <section id="generalization" class="level3">
 <h3 class="anchored" data-anchor-id="generalization">Generalization:</h3>
-<p>For <span class="math inline">\(0 &lt; \beta &lt; 1\)</span>, as we keep expanding the equation, it becomes clear that each new value $ v_t $ is a weighted sum of all previous inputs, with exponentially decaying weights.</p>
+<p>For <span class="math inline">\(0 &lt; \beta &lt; 1\)</span>, as we keep expanding the equation, it becomes clear that each new value <span class="math inline">\(v_t\)</span> is a weighted sum of all previous inputs, with exponentially decaying weights.</p>
 <p>Specifically, <span class="math inline">\(\beta^3 &lt; \beta^2 &lt; \beta\)</span>, implying that the influence of older values diminishes over time. Thus, recent values (or updates in the case of deep learning optimizers) contribute more to the final result.</p>
 <p>This behavior makes the EWMA a useful tool in optimizers like Adam, where the moving average of gradients and squared gradients is used to adjust learning rates and stabilize optimization.</p>
 </section>
